@@ -1,0 +1,33 @@
+/* Đây là chú thích trong CSS ( Crtl+/ ) */
+/* selector * ap dụng cho toàn bộ phần tử  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    color:red;
+    background-color: yellow;
+    margin:10px 20px 30px 40px; /* Top => Right => Bottom => Left */
+    padding: 20px;
+}
+#div1{
+    margin-top:20px;
+    width: 100%;
+    height: 200px;
+    background-color:aqua;
+    
+}
+#div2{
+    margin-top: 30px;
+    width: 50%;
+    height: 300px;
+    background-color: brown;
+}
+.style-border{
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: blue; */
+    border: 5px solid orange;
+}
