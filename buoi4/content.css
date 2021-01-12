@@ -1,0 +1,228 @@
+.body-content {
+    padding-top: 3rem;
+}
+.banner {
+    position: relative;
+    margin: 20px 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+.banner img{
+    width: 100%;
+    position: relative;
+    padding: 5px;
+}
+.layout{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.col-news{
+    margin: 20px;
+}
+
+.list-posts {
+    height: calc(100% - 40px);
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.post {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    background-color: #fff;
+    height: 21.5%;
+}
+.post-thumbnail {
+    float: left;
+    height: 100%;
+    width: 105px;
+}
+.post-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.post-info {
+    float: left;
+    width: calc(100% - 110px);
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.post-title {
+    color: #464646;
+    text-align: left;
+    font-size: 1rem;
+}
+.post-author {
+    font-size: 0.8rem;
+    color: #757575;
+}
+.intro {
+    padding: 20px 0;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.intro-text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #464646;
+    font-size: 1rem;
+}
+.intro-description {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #999;
+    width: 80%;
+    margin: auto;
+}
+.fa-adn{
+    font-size: 60px;
+    color: #464646;
+    padding:5px;
+}
+a{
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+
+.route {
+    padding-bottom: 5rem;
+    background-color: #e4f2fd;
+}
+.route-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.title-route h2{
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 5rem;
+    
+}
+.title-route{
+    display: flex;
+    justify-content: center;
+}
+.route-item {
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    background-color: #fdfdfd;
+    transition: all 0.2s;
+    flex: 0 0 30.333333%;
+    max-width: 33.333333%;
+    
+}
+.route-link, .route-link:hover, .route-link:visited {
+    text-decoration: none;
+    color: inherit;
+}
+.route-img {
+    position: relative;
+}
+.route-img img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+.route-description {
+    padding: 1.4rem;
+}
+.route-title, .route-detail {
+    margin-bottom: 10px;
+}
+.route-session {
+    font-size: 16px;
+    font-weight: 600;
+    color: #757575;
+}
+
+
+.product{
+    margin-bottom: 5rem;
+}
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.title-product h2{
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 5rem;
+    text-transform: uppercase;
+}
+.title-product{
+    display: flex;
+    justify-content: center;
+}
+.product-item {
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    background-color: #fdfdfd;
+    transition: all 0.2s;
+    flex: 0 0 30.333333%;
+    max-width: 33.333333%;
+    
+}
+.product-link, .product-link:hover, .product:visited {
+    text-decoration: none;
+    color: inherit;
+}
+.product-img{
+    position: relative;
+}
+.product-img img{
+    max-width: 100%;
+}
+.product-description{
+    padding: 1.4rem;
+}
+.product-title, .product-detail{
+    margin-bottom: 10px;
+}
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.product-detail {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #5e5e5e;
+}
+
+
+
+.youtube-area{
+    background-color: #e4f2fd;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+iframe{
+    border-radius: 4px;
+    width: 100%;
+}
