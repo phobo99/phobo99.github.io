@@ -226,3 +226,22 @@ iframe{
     border-radius: 4px;
     width: 100%;
 }
+
+
+.icon-mess{
+    background-color: #0084FF;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-facebook-messenger{
+    font-size: 50px;
+    position: fixed;
+    color: white;
+}
