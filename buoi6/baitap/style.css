@@ -36,17 +36,27 @@ h1{
 img{
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
     border-radius: 4px;
-    width: 100%;
-    margin-bottom: 40px;    
+    width: 100%;  
 }
-a{
+.anh-meo{
     width: 30%;
+    margin-bottom: 50px;
+    
 }
-.anh-meo p{
+.anh-meo span{
     display: flex;
     justify-content: center;
     margin: 15px;
+    text-decoration: none;
 }
-p:hover{
-    color: green;
+span:hover{
+    color: red;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+img:hover{
+    width: 110%;
 }

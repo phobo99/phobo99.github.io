@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            font-size: 60px;
+            color: red;
+        }
+        p::first-line{
+            text-decoration: underline;
+        }
+        p::selection{
+            background-color: aqua;
+        }
+        .weather::before{
+            content: "Hom nay: ";
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem, ipsum dolor sit amet ::first-line consectetur adipisicing elit. Autem, libero ipsum? Excepturi eligendi illum minima
+        repellendus odio saepe est officia alias nesciunt quidem? Laborum praesentium facere debitis, quaerat molestiae
+        minus.</p>
+        <p class="weather"> troi lanh</p>
+        <p class="weather"> troi nong</p>
+</body>
+
+</html>

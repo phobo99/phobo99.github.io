@@ -12,6 +12,7 @@ body{
     width: 65%;
     height: 100%;
     margin: auto;
+    padding: 20px;
 }
 h1{
     font-weight: 500;
@@ -38,6 +39,7 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 img{
     width: 100%;
@@ -47,5 +49,19 @@ h1:hover, strong:hover, h4:hover{
     color: red;
 }
 h4{
+    font-size: 15px;
     font-weight: 5;
+    color: gray;
+}
+.home{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+.fa-home{
+    color: gray;
+    font-size: 50px;
+}
+img:hover{
+    width: 110%;
 }
