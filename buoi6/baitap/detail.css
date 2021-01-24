@@ -9,13 +9,13 @@ body{
 }
 .container{
     background-color: #fff;
-    width: 65%;
+    width: 55%;
     height: 100%;
     margin: auto;
     padding: 20px;
 }
 h1{
-    font-weight: 500;
+    font-weight: 600;
 }
 .title{
     display: flex;
@@ -25,7 +25,7 @@ h1{
     
 }
 .content{
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -40,18 +40,26 @@ h1{
     align-items: center;
     flex-direction: column;
     margin-bottom: 30px;
+    transition: transform 0.25s;
+}
+.comment:hover{
+    transform: scale(1.1);
 }
 img{
     width: 100%;
     margin-top: 30px;
+
 }
-h1:hover, strong:hover, h4:hover{
+h1:hover, strong:hover{
     color: red;
 }
 h4{
     font-size: 15px;
     font-weight: 5;
     color: gray;
+}
+h4:hover{
+    color: red;
 }
 .home{
     position: fixed;
@@ -62,6 +70,7 @@ h4{
     color: gray;
     font-size: 50px;
 }
-img:hover{
-    width: 110%;
+.fa-home:hover{
+    color:red;
 }
+
