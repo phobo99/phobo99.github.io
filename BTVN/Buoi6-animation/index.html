@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      /* heart */
+      p.heart {
+        font-size: 80px;
+        width: 200px;
+        margin: auto;
+        margin-top: 100px;
+        animation: changeSize 2s infinite;
+        text-align: center;
+          margin-bottom: 100px;
+      }
+
+      @keyframes changeSize {
+        10% {
+          transform: scale(1);
+        }
+
+        30% {
+          transform: scale(1.1);
+        }
+
+        40% {
+          transform: scale(1.2);
+        }
+
+        50% {
+          transform: scale(1);
+        }
+
+        60% {
+          transform: scale(1.2);
+        }
+
+        80% {
+          transform: scale(1.1);
+        }
+
+      }
+
+      #container {
+        background-color: #fff;
+        margin: auto;
+        padding: 15px 15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #container p {
+        text-transform: uppercase;
+        font-weight: 550;
+        font-size: 32px;
+        color: #4d5054;
+        line-height: 2;
+      }
+
+      .animation::after {
+        content: "";
+        animation: animate 4.5s ease 0s infinite;
+      }
+
+      @keyframes animate {
+        0% {
+          content: "CODING";
+          background-color: #c2621c;
+          color: #fff;
+          font-size: 32px;
+        }
+
+        33% {
+          content: "TEACHING";
+          background-color: #5a3294;
+          color: #fff;
+          font-size: 32px;
+        }
+
+        66% {
+          content: "LEARNING";
+          background-color: #228a4c;
+          color: #fff;
+          font-size: 32px;
+        }
+
+        99.99% {
+          content: "CODING";
+          background-color: #c2621c;
+          color: #fff;
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Heart -->
+    <p class="heart">🧡</p>
+
+    <!-- text -->
+    <div id="container">
+      <div>
+        <p>Start</p>
+      </div>
+      <div><span class="animation"></span></div>
+      <div>
+        <p>Today</p>
+      </div>
+    </div>
+  </body>
+</html>
