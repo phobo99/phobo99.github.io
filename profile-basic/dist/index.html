@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"><title>profile-basic</title><link href="/css/app.fd7bbc80.css" rel="preload" as="style"><link href="/js/app.4da0bc0e.js" rel="preload" as="script"><link href="/js/chunk-vendors.20436e79.js" rel="preload" as="script"><link href="/css/app.fd7bbc80.css" rel="stylesheet"></head><body><div id="app"></div><script>// Navbar JavaScript
+    function toggleMenu() {
+      var menuToggle = document.querySelector('.toggle');
+      var menu = document.querySelector('.menu');
+      menuToggle.classList.toggle('active')
+      menu.classList.toggle('active')
+    }
+
+
+    // Scroll Animation
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance: '85px',
+      duration: 2000,
+      reset: true
+    })
+
+    sr.reveal('.home-text', {})
+    sr.reveal('.home-img', { delay: 200 })
+    sr.reveal('.social', { delay: 200 })
+
+    sr.reveal('.about-img', {})
+    sr.reveal('.heading', {})
+    sr.reveal('.about-text', { delay: 200 })
+
+    sr.reveal('.services-content', {})
+
+    sr.reveal('.work-text', {})
+    sr.reveal('.work-img', { delay: 200 })
+
+
+    sr.reveal('.app h1', {})
+    sr.reveal('.app', { delay: 200 })
+
+    sr.reveal('form input', {})
+    sr.reveal('form textarea', {})</script><script src="https://unpkg.com/scrollreveal"></script><script src="/js/chunk-vendors.20436e79.js"></script><script src="/js/app.4da0bc0e.js"></script></body></html>
