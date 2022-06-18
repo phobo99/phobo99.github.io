@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- Navbar -->
-    <nav>
+    <nav class="nav">
       <a href="" class="logo">{{ fullname }}</a>
       <div class="toggle" onclick="toggleMenu();"></div>
 
@@ -48,7 +48,6 @@
         class="heading"
         v-scroll-reveal.reset="{
           delay: 250,
-          scale: 4,
           rotate: {
             x: 120,
             z: 20,
@@ -60,14 +59,11 @@
       </div>
       <div class="about-content">
         <!-- About Image -->
-        <div class="about-img" v-scroll-reveal.reset="{ delay: 250, scale: 2 }">
+        <div class="about-img" v-scroll-reveal.reset="{ delay: 250 }">
           <img src="@/assets/pho1.png" alt="Luu Dang Pho Photo" />
         </div>
         <!-- About Text -->
-        <div
-          class="about-text"
-          v-scroll-reveal.reset="{ delay: 450, scale: 2 }"
-        >
+        <div class="about-text" v-scroll-reveal.reset="{ delay: 450 }">
           <h1>I'm {{ name }}</h1>
           <p>
             My name is {{ fullname }}. I’m 22 years old. I live in Hanoi and
@@ -84,7 +80,7 @@
 
     <!-- Services -->
     <section id="services" v-scroll-reveal.reset>
-      <div class="heading" v-scroll-reveal.reset="{ delay: 450, scale: 2 }">
+      <div class="heading" v-scroll-reveal.reset="{ delay: 450 }">
         <h2>Services</h2>
         <p>My Services Offer</p>
       </div>
@@ -93,7 +89,7 @@
         class="services-content"
         v-scroll-reveal.reset="{
           delay: 250,
-          scale: 4,
+
           rotate: {
             x: 120,
             z: 20,
@@ -105,7 +101,7 @@
           class="box"
           v-scroll-reveal.reset="{
             delay: 450,
-            scale: 2,
+
             rotate: {
               x: 120,
               y: 40,
@@ -131,7 +127,7 @@
         <p>Work With Me</p>
       </div>
       <div class="work-content">
-        <div class="work-text" v-scroll-reveal.reset="{ delay: 450, scale: 3}">
+        <div class="work-text" v-scroll-reveal.reset="{ delay: 450 }">
           <h1>
             We Belive To Deliver Best <br />
             Quality Work
@@ -153,8 +149,8 @@
           class="work-img"
           v-scroll-reveal.reset="{
             delay: 450,
-            scale: 3,
-            easing: (0.5, 0, 0, 1)
+
+            easing: (0.5, 0, 0, 1),
           }"
         >
           <img src="@/assets/work.jpg" alt="" />
@@ -176,6 +172,9 @@
           </h1>
           <a href="#" target="_blank"><i class="bx bxl-play-store"></i></a>
           <a href="#" target="_blank"><i class="bx bxl-apple"></i></a>
+          <p>Phone: +84964925498</p>
+          <p>Email: luupho99tk@gmail.com</p>
+          <p>Address: Kim Ma, Ba Dinh, Hanoi</p>
         </div>
         <div class="contact-form">
           <form>
@@ -195,7 +194,7 @@
     </section>
 
     <div class="copyright">
-      <p>&#169; 2021 Luu Dang Pho All Right Reserves </p>
+      <p>&#169; 2021 Luu Dang Pho All Right Reserves</p>
     </div>
   </div>
 </template>
@@ -271,8 +270,19 @@ export default {
   --main-color: #f5b041;
   --second-color: #212f3d;
 }
+body {
+  background: #c2e59c;
+  background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
+  background: linear-gradient(to right, #64b3f4, #c2e59c);
+}
 section {
   padding: 100px;
+}
+.nav {
+  background: #c2e59c;
+  background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
+  background: linear-gradient(to right, #64b3f4, #c2e59c);
+  border-bottom: 1px solid #ccc;
 }
 /* Home CSS */
 #home {
@@ -526,6 +536,20 @@ ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.contact-content p {
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: monospace;
+  font-size: 1.2rem;
 }
 .contact-form {
   width: 360px;

@@ -1,0 +1,100 @@
+$bg-color: #fefcfb;
+$primary-color: #fa7436;
+$header-color: #222;
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin flexbox(
+  $align: flex-start,
+  $justify: flex-start,
+  $flex-direction: row,
+  $wrap: nowrap
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $flex-direction;
+  flex-wrap: $wrap;
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  background-color: #fefcfb;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+h1 {
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+}
+.container-fluid {
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .header {
+    .nav-bar {
+      display: flex;
+      @include size(100%, 114px);
+      align-items: center;
+      justify-content: space-around;
+      .logo {
+        display: flex;
+        cursor: pointer;
+        .text-logo {
+          font-size: 24px;
+          font-weight: bold;
+          margin-right: 10px;
+        }
+      }
+      .menu-list {
+        .menu {
+          @include flexbox(stretch, space-between);
+          gap: 32px;
+          li {
+            cursor: pointer;
+          }
+        }
+      }
+      .nav-login {
+        .login {
+          font-size: 16px;
+          font-weight: 600;
+          color: $primary-color;
+          cursor: pointer;
+        }
+        .sign-up {
+          padding: 18px 50px;
+          background-color: $primary-color;
+          border-radius: 8px;
+          color: white;
+          margin-left: 58px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (max-width: 767px) {
+}
